@@ -1,0 +1,229 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+/* .light-mode{
+    background-color: white;
+    color:black;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+} */
+
+.main{
+    display:flex ;
+    height: 100vh;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+.logo{
+    display: inline-block;
+    background-color: black;
+    margin-left:4rem;
+    margin-top: 0.4rem;
+    width: 20%;
+}
+
+.logo h2{   
+    color: yellowgreen;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+};
+
+.navbar_option {
+   position: fixed;
+   width:70%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.navbar_option a{
+   width: 100%;
+   padding:0rem 2.75rem;
+   text-decoration: none;
+}
+
+.side_bar{
+    position: sticky;
+    width: 60px;
+    background-color: black;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;    
+}
+
+.icons .sidebar_option_icon{  
+   margin-bottom: 40px;
+   font-size: 25px;
+   
+}
+
+ .sidebar_option_icon:hover{
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.main_content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.section1{
+    width: 100%;
+    height: 25rem;
+}
+
+.sectionimg{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 80px;
+    background-color:rgba(255, 0, 0, 0.082);
+}
+
+.sectionpara{
+
+    width: 40%;
+    margin: 1.5rem;
+    background-color:rgba(255, 0, 0, 0.021);
+    opacity: 0.8;
+
+}
+
+.click-button{
+    margin: 1.5rem;
+    background-color: rgba(134, 218, 7, 0.966);
+    color: white;
+    border-radius: 15%;
+    height: 2rem;
+    width: 5rem;
+}
+
+.click-button:hover{
+    cursor: grab;
+}
+
+.section2{
+    color: white;
+    margin: 1rem;
+}
+
+.section2 h2{
+    margin: 1.5rem;
+}
+
+.section2images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+.content {
+    position: relative; 
+    overflow: hidden;
+}
+
+.content img {
+    height: 200px;
+    width: 270px;
+    margin: 0.4rem;
+    border-radius: 10%;
+    transition: transform 1s ease-in-out;
+}
+
+.content img:hover {
+    transform: scale(1.2);
+}
+
+.content p,
+.content .click-button {
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(77, 86, 87);
+}
+
+.content .click-button {
+    bottom: 10%;
+    width: 30%;
+    background-color: rgba(134, 218, 7, 0.747);
+    border: 0;
+    cursor: pointer;
+
+}
+
+.content:hover p,
+.content:hover .click-button {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+}
+.secimg{
+    height: 200px;
+    width: 270px;
+    margin: 0.4rem;
+    border-radius: 10%;
+}
+
+.section3{
+    width: 100%;
+    height: 25rem;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+}
+
+.section3img{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 80px;
+    background-color:rgba(255, 0, 0, 0.082);
+}
+
+.section3para{
+
+    width: 40%;
+    margin: 1.5rem;
+    background-color:rgba(255, 0, 0, 0.021);
+}
+
+.section4 h2{
+    margin: 1.5rem;
+}
+
+.line{
+    margin: 2rem;
+    border: 0.5px solid grey;
+}
+
+.profile{
+    margin: 2rem;
+    
+}
+.profile button{
+    border-radius: 20%;
+}
+
+.profile button:hover{
+    cursor: pointer;
+}
