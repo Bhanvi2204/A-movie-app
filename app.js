@@ -1,25 +1,7 @@
-// let btn=document.getElementById('darkbtn');
-// // let body=document.querySelector('body');
-
-// btn.addEventListener("click",()=>{
-//     document.body.classList.toggle('light-mode');
-//     // btn.style.backgroundColor="white";
-//     if (document.body.classList.contains('dark-mode')) {
-//         localStorage.setItem('theme', 'light');
-//     } else {
-//         localStorage.setItem('theme', 'dark');
-//     }
-// });
-
-let body=document.querySelector('body');
-let btn=document.getElementById('darkbtn');
-btn.addEventListener("click",()=>{
-    document.body.classList.add('light-mode');
-    document.body.classList.add('dark-mode')
-        document.body.classList.toggle('light-mode');
-        if (document.body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'light');
-        } else {
-            localStorage.setItem('theme', 'dark');
-        }
-    });
+const ball=document.querySelector(".toggle-ball");
+const items=document.querySelectorAll(".side_bar,.navbar,.navbar .logo h2,.toggle,.toggle-ball,.section2,.arrow,.navbar_option a,body");
+ball.addEventListener("click",()=>{
+    items.forEach(item=>{
+        item.classList.toggle("active");
+    })
+})

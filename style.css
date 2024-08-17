@@ -2,17 +2,12 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     margin: 0;
+   
+}
+body{
     background-color: black;
     color: white;
 }
-/* .light-mode{
-    background-color: white;
-    color:black;
-}
-.dark-mode{
-    background-color: black;
-    color: white;
-} */
 
 .main{
     display:flex ;
@@ -54,6 +49,31 @@
    width: 100%;
    padding:0rem 2.75rem;
    text-decoration: none;
+   color: white;
+}
+.toggle{
+    width: 55px;
+    height:20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.toggle-icon{
+    /* margin-left: 10px; */
+    color: goldenrod;
+    background-color: white;
+}
+.toggle-ball{
+    width: 21px;
+    height:21px;
+    background-color: black;
+    position: absolute;
+    right: 1.5px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .side_bar{
@@ -207,9 +227,7 @@
     background-color:rgba(255, 0, 0, 0.021);
 }
 
-.section4 h2{
-    margin: 1.5rem;
-}
+
 
 .line{
     margin: 2rem;
@@ -226,4 +244,44 @@
 
 .profile button:hover{
     cursor: pointer;
+}
+
+
+
+.side_bar.active{
+    background-color: white;
+    color: black;
+}
+
+.navbar.active{
+    background-color: white;
+    color: black;
+}
+.navbar_option a.active{
+    color: black;
+}
+
+.navbar .logo h2.active{
+    background-color: white;
+}
+.toggle.active{
+    background-color: white;
+}
+
+.toggle-ball.active{
+    background-color: black;
+    transform: translate(-20px);
+}
+.section2.active{
+    background-color: white;
+    color: black;
+}
+
+
+.arrow.active{
+    background-color: white;
+    color: grey;
+}
+body.active{
+    background-color: white;
 }
