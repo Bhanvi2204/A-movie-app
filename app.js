@@ -5,3 +5,11 @@ ball.addEventListener("click",()=>{
         item.classList.toggle("active");
     })
 })
+
+const arrows=document.querySelectorAll(".arrow");
+const section2images=documnet.querySelectorAll(".section2images");
+arrows.forEach((arrow,i)=>{
+    arrows.addEventListener("click",()=>{
+        section2images[i].style.transform="translateX(-100px)";
+    })
+})

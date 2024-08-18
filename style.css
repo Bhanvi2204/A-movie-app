@@ -86,6 +86,7 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-top: 60px;    
+    
 }
 
 .icons .sidebar_option_icon{  
@@ -103,11 +104,11 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
+    width: 100vh;
     overflow: scroll;
 }
 
 .section1{
-    width: 100%;
     height: 25rem;
 }
 
@@ -119,12 +120,10 @@ body{
 }
 
 .sectionpara{
-
     width: 40%;
     margin: 1.5rem;
     background-color:rgba(255, 0, 0, 0.021);
     opacity: 0.8;
-
 }
 
 .click-button{
@@ -142,7 +141,7 @@ body{
 
 .section2{
     color: white;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .section2 h2{
@@ -152,13 +151,22 @@ body{
 .section2images{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
+    justify-content: space-around; 
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+    
 }
 
 .content {
     position: relative; 
     overflow: hidden;
 }
+.divcontent{
+    position: relative;
+    width: 100%;
+    height:220px ;
+    overflow: hidden;
+ }
 
 .content img {
     height: 200px;
@@ -166,6 +174,11 @@ body{
     margin: 0.4rem;
     border-radius: 10%;
     transition: transform 1s ease-in-out;
+}
+.section2images .content {
+    min-width: 25%; 
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .content img:hover {
@@ -227,8 +240,6 @@ body{
     background-color:rgba(255, 0, 0, 0.021);
 }
 
-
-
 .line{
     margin: 2rem;
     border: 0.5px solid grey;
@@ -245,8 +256,6 @@ body{
 .profile button:hover{
     cursor: pointer;
 }
-
-
 
 .side_bar.active{
     background-color: white;
@@ -284,4 +293,21 @@ body{
 }
 body.active{
     background-color: white;
+}
+.divcontent .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 100px;
+    right: 0;
+}
+
+.divcontent .arrow:hover{
+    font-size: 120px;
 }
